@@ -1,0 +1,18 @@
+.button-4 {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  min-height: 35px;
+  min-width: 90px;
+}
+.button-5 {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  left: 150px;
+  border-radius: 10px;
+  min-height: 35px;
+  min-width: 90px;
+}

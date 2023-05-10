@@ -1,0 +1,13 @@
+.DS_Store
+npm-debug.log
+Thumbs.db
+*/node_modules/
+*/out/
+*/.vs/
+tsconfig.lsif.json
+*.lsif
+*.db
+*/build/ext-src/
+*/build/static/
+*/build/asset-manifest.json
+reflexion/yarn-error.log

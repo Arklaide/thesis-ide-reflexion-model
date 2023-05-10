@@ -1,0 +1,88 @@
+{
+  "name": "vscode-reflexion-model",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.37.0"
+  },
+  "publisher": "belccrie",
+  "activationEvents": [
+    "onCommand:react-webview.start"
+  ],
+  "main": "./build/ext-src/main.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "react-webview.start",
+        "title": "Start Reflexion Webview",
+        "category": "React"
+      },
+      {
+        "command": "extension.start2",
+        "title": "Start this test",
+        "category": "React"
+      },
+      {
+        "command": "extension.sayHello",
+        "title": "Add Module"
+      },
+      {
+        "command": "reflexion.getDependencies",
+        "title": "Get Dependencies"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "explorerResourceIsFolder || isFileSystemResource",
+          "command": "extension.sayHello",
+          "group": "YourGroup@1"
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "@digitak/grubber": "^3.1.4",
+    "config": "^3.3.9",
+    "fs": "^0.0.1-security",
+    "fs-web": "^1.0.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-flow-renderer": "^10.3.17",
+    "reactflow": "^11.6.1",
+    "terser": "^5.15.0",
+    "yarn": "^1.22.19"
+  },
+  "resolutions": {},
+  "scripts": {
+    "vscode:prepublish": "./build.sh",
+    "old-prepublish": "node ./scripts/build-non-split.js && tsc -p tsconfig.extension.json",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "start": "react-scripts start",
+    "watch": "tsc -watch -p ./",
+    "build": "node ./scripts/build-non-split.js && tsc -p tsconfig.extension.json",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "esbuild-base": "esbuild ./build/ext-src/extension.js --bundle --outfile=build/ext-src/main.js --external:vscode --format=cjs --platform=node",
+    "esbuild": "yarn run -S esbuild-base --sourcemap"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.20.0",
+    "@types/jest": "^23.3.13",
+    "@types/node": "16.x",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/vscode": "^1.37.0",
+    "esbuild": "^0.17.16",
+    "eslint": "^8.34.0",
+    "react-scripts": "5.0.0",
+    "rewire": "^6.0.0",
+    "typescript": "^4.9.5",
+    "vscode": "^1.1.37"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

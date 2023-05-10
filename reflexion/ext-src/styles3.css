@@ -1,0 +1,43 @@
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.react-flow__node-custom {
+  padding: 10px;
+  background-color: #556677;
+  color: white;
+  font-size: 25px;
+}
+
+.node-style{
+  word-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  width: 248px;
+  height: 70px;
+  margin-left: 0px;
+  font-size: 25px;
+}
+
+.node-style2{
+  word-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  width: 248px;
+  height: 70px;
+  margin-left: 10px;
+  font-size: 25px;
+}
+/*  */
