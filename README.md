@@ -5,7 +5,7 @@ The repository consists of the source code of a VSCODE extension and the extensi
 
 ## Quick guide: Installing and using the extension
 
-1. Download the VSIX file
+1. [Download the VSIX file](vscode-reflexion-model-0.1.0.vsix)
 2. Open VSCODE -> go to the extension tab -> press the 3 dots in the top right corner -> install from VSIX and select the downloaded file
 3. If it is installed correctly -> Open the command prompt and choose "Start Reflexion Webview"
 4. A canvas appears where you can create your high-level model
